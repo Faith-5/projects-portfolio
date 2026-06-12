@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project porfolio - Faith Bamidele</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Selected work</p>
+          <h1>Hi, I’m Faith.</h1>
+          <p class="hero-text">
+            I build systems that think, automate, and ship from backend
+            infrastructure to AI that solves real problems. These are a few
+            projects that challenged me and helped me grow.
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section class="projects-section">
+          <div class="section-heading">
+            <p class="section-label"></p>
+            <h2>Projects</h2>
+          </div>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/ultrex.png"
+                alt="Ultrex Studio product screenshot"
+              />
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Ultrex Studio</p>
+              <h3>AI Shorts Engine</h3>
+              <div class="project-description">
+                <p>
+                  Ultrex came as an idea last year when I realized I was
+                  spending more time consuming content on YouTube than creating
+                  it. I decided I was going to learn video editing and start
+                  creating shorts myself.
+                </p>
+                <p>
+                  After learning a bit and creating some shorts, I quickly
+                  realized the process was not sustainable because of how much
+                  time it consumed. I knew there had to be a better way.
+                </p>
+                <p>
+                  That was where Ultrex came from. I initially built it to
+                  accept short ideas and use AI to generate images and audio,
+                  then use MoviePy to compile everything into a video. It
+                  worked, but generation time was too slow.
+                </p>
+                <p>
+                  I researched better alternatives and moved to FFmpeg for
+                  optimized media processing, which reduced generation time
+                  drastically and made it possible to create a short in about 30
+                  seconds or less.
+                </p>
+                <p>
+                  Then I noticed another bottleneck - getting good scripts. I
+                  found that spending time prompting and refining outputs
+                  manually still slowed the process down.
+                </p>
+                <p>
+                  So I pushed it further and created an AI agent workflow inside
+                  Ultrex that handles creating, reviewing, improving scripts,
+                  processing media, and even uploading directly to YouTube.
+                </p>
+                <p>
+                  The result became a system that can go from an idea for a
+                  short to a published YouTube video in under 3 minutes. I
+                  tested it personally and within three days generated about 400
+                  views and 1.4 hours of watch time.
+                </p>
+                <p>
+                  I haven't deployed it publicly yet because of infrastructure
+                  costs involved in hosting video processing pipelines, and
+                  currently I want to perfect the experience before making it
+                  public.
+                </p>
+              </div>
+              <p class="project-tools">
+                Tools used: FastAPI, Uvicorn, APScheduler, Groq API, LangGraph,
+                Pollinations AI, Edge-TTS, FFmpeg, Turso, Google OAuth, YouTube
+                Data API, Pydantic, Mutagen, python-dotenv.
+              </p>
+              <div class="project-tags">
+                <span>FastAPI</span>
+                <span>LangGraph</span>
+                <span>FFmpeg</span>
+                <span>AI orchestration</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Faith-5/Ultrex"
+                  class="button button-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Ultrex Studio GitHub"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reverse">
+            <div class="project-image">
+              <img src="assets/arziki.png" alt="Arziki product screenshot" />
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Arziki</p>
+              <h3>Inventory forecasting for SMEs</h3>
+              <div class="project-description">
+                <p>
+                  Arziki started as a competition idea after a friend reached
+                  out and asked if I would be interested in joining the team.
+                </p>
+                <p>
+                  The goal was to build an inventory intelligence system for
+                  Small and Medium Enterprises, with our focus being
+                  supermarkets.
+                </p>
+                <p>
+                  My responsibility was building the machine learning pipeline -
+                  ingesting raw inventory data, transforming it into usable
+                  inputs, forecasting future stock levels, detecting possible
+                  stockouts, and generating reports and insights.
+                </p>
+                <p>
+                  Although we didn't win the competition, I enjoyed working on
+                  the problem because it felt practical and close to real
+                  business needs.
+                </p>
+                <p>
+                  I still plan to continue developing it and eventually bring it
+                  fully to life.
+                </p>
+              </div>
+              <p class="project-tools">
+                Tools used: Python, pandas, Prophet, Streamlit, scikit-learn,
+                scipy, matplotlib, seaborn, plotly, Pillow, joblib, argparse.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Prophet</span>
+                <span>Streamlit</span>
+                <span>Forecasting</span>
+                <span>Feature engineering</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Faith-5/Arziki-Inventory-Forecasting"
+                  class="button button-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Arziki GitHub"
+                  >GitHub</a
+                >
+                <a
+                  href="https://huggingface.co/spaces/Faith10/retail-forecast-demo?logs=container"
+                  class="button button-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Arziki live demo"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/smartmeter.png"
+                alt="SmartMeter product screenshot"
+              />
+            </div>
+            <div class="project-content">
+              <p class="project-meta">SmartMeter</p>
+              <h3>Household electricity forecasting</h3>
+              <div class="project-description">
+                <p>
+                  SmartMeter was a final year project I built for a Computer
+                  Science student.
+                </p>
+                <p>
+                  The goal was to create an effective machine learning solution
+                  that could forecast household electricity consumption while
+                  still being lightweight enough to run on lower-cost devices.
+                </p>
+                <p>
+                  I experimented with five different models, compared their
+                  performance, and exposed all the analysis directly inside the
+                  web application.
+                </p>
+                <p>
+                  To make interaction easier, I also integrated an AI assistant
+                  that could answer basic questions about the project and the
+                  student.
+                </p>
+                <p>
+                  What I enjoyed most while building this was balancing model
+                  performance with practicality and deployment considerations.
+                </p>
+              </div>
+              <p class="project-tools">
+                Tools used: Python, pandas, scikit-learn, statsmodels,
+                TensorFlow, Streamlit, Groq, joblib, python-dotenv.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>TensorFlow</span>
+                <span>Scikit-learn</span>
+                <span>Groq</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Faith-5/smart-meter"
+                  class="button button-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="SmartMeter GitHub"
+                  >GitHub</a
+                >
+                <a
+                  href="https://smart-meter-cw6x.onrender.com/"
+                  class="button button-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="SmartMeter live demo"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reverse">
+            <div class="project-image">
+              <img
+                src="assets/lassa%20fever.png"
+                alt="Lassa Fever Informatics product screenshot"
+              />
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Lassa Fever Informatics</p>
+              <h3>Outbreak analytics for Ondo State</h3>
+              <div class="project-description">
+                <p>
+                  Lassa Fever Informatics was another final year project I built
+                  for an Information and Communications Engineering student.
+                </p>
+                <p>
+                  The goal was to create a system that could visualize disease
+                  trends, identify hotspots, and predict future Lassa fever
+                  outbreaks in Ondo State.
+                </p>
+                <p>
+                  I built the analytics pipeline, visualizations, and prediction
+                  components.
+                </p>
+                <p>
+                  Because the project used confidential data, I only made the
+                  web application public and did not upload notebooks or
+                  datasets.
+                </p>
+                <p>
+                  This project gave me experience working with sensitive data
+                  and building responsibly around real-world constraints.
+                </p>
+              </div>
+              <p class="project-tools">
+                Tools used: Python, pandas, numpy, scikit-learn, Streamlit,
+                Plotly, Folium, geopy, Jupyter Notebook.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>Plotly</span>
+                <span>Folium</span>
+                <span>Geospatial analytics</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Faith-5/lassa-fever"
+                  class="button button-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Lassa Fever Informatics GitHub"
+                  >GitHub</a
+                >
+                <a
+                  href="https://lassa-fever-gosd.onrender.com/"
+                  class="button button-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Lassa Fever Informatics live demo"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal project-no-image">
+            <div class="project-content">
+              <p class="project-meta">SGSMA 2026</p>
+              <h3>Synchrophasor anomaly detection</h3>
+              <div class="project-description">
+                <p>
+                  This project started when a friend introduced me to a
+                  competition on power systems - a field I literally knew
+                  nothing about.
+                </p>
+                <p>
+                  The difficult part was that he sent it to me just a few days
+                  before the deadline, and I already had several other
+                  commitments.
+                </p>
+                <p>
+                  I decided to take the risk anyway because I knew I had nothing
+                  to lose.
+                </p>
+                <p>
+                  Every free moment I had, I researched power systems, PMUs,
+                  synchrophasors, anomaly detection, and everything I needed to
+                  understand the problem properly.
+                </p>
+                <p>
+                  I built the pipeline, submitted barely a minute before the
+                  deadline, and moved on.
+                </p>
+                <p>
+                  Then unexpectedly, I got contacted that I had become a
+                  finalist and was invited to Santiago, Chile for live
+                  evaluation and conference participation.
+                </p>
+                <p>
+                  Although I couldn't attend physically because of timing and
+                  visa logistics, I was offered the chance to present virtually.
+                  After the live evaluation, I placed 3rd.
+                </p>
+                <p>
+                  That project reminded me that sometimes not knowing something
+                  yet is not a limitation if you're willing to learn quickly.
+                </p>
+              </div>
+              <p class="project-tools">
+                Tools used: Python, pandas, numpy, scipy, scikit-learn,
+                LightGBM, XGBoost, joblib.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>LightGBM</span>
+                <span>XGBoost</span>
+                <span>Time-series</span>
+                <span>Anomaly detection</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Faith-5/sgsma-2026-anomaly-detection"
+                  class="button button-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="SGSMA 2026 GitHub"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reverse">
+            <div class="project-image">
+              <img
+                src="assets/sme%20app.png"
+                alt="SME Business Management API product screenshot"
+              />
+            </div>
+            <div class="project-content">
+              <p class="project-meta">SME Business Management API</p>
+              <h3>Backend API for SME operations</h3>
+              <div class="project-description">
+                <p>
+                  This is an ongoing lab project focused on building tools for
+                  small businesses.
+                </p>
+                <p>
+                  I volunteered to handle the backend engineering side of the
+                  project.
+                </p>
+                <p>
+                  We're still actively building, and I am learning a lot while
+                  working on it.
+                </p>
+                <p>
+                  So far, I have worked on authentication, role-based access
+                  control, inventory endpoints, and structuring the API for
+                  future expansion.
+                </p>
+                <p>
+                  This project has helped me improve my backend thinking and
+                  understand how production systems are structured.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>SQLAlchemy</span>
+                <span>JWT</span>
+                <span>RBAC</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Faith-5/sme-backend"
+                  class="button button-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="SME Business Management API GitHub"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="closing-section">
+        <div class="closing-copy">
+          <h2>I'm proud of how far I've come.</h2>
+          <p>
+            I still feel like there is a lot I do not know yet, but I learn
+            fast, adapt quickly, and I genuinely enjoy building things that are
+            useful and impactful.
+          </p>
+          <p>Thank you so much for taking the time to view my work.</p>
+          <p class="closing-note">
+            I would sincerely appreciate any feedback, and I hope to hear from
+            you.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://github.com/Faith-5"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Faith Bamidele GitHub"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/bamidele-faith/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Faith Bamidele LinkedIn"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
